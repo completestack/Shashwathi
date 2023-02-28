@@ -1,0 +1,16 @@
+@import url("https://themes.googleusercontent.com/fonts/css?kit=-lTUqgJg2dxbe4D7B5DEICbzagQlgiMMTcfwSOywUzNaqGzgTMfctaXjEQzy8pCR");
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 800px;
+}
+
+.profile {
+  min-width: 300px;
+}
