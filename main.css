@@ -1,5 +1,9 @@
 @import url("https://themes.googleusercontent.com/fonts/css?kit=-lTUqgJg2dxbe4D7B5DEICbzagQlgiMMTcfwSOywUzNaqGzgTMfctaXjEQzy8pCR");
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -7,10 +11,197 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   max-width: 800px;
 }
 
+.full-image-section {
+  display: none;
+}
+
+.mobile-image-section {
+  margin-bottom: 1rem;
+  background-image: url(images/shashu-hd.png);
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: 38% 0%;
+  background-size: 150%;
+  background-clip: content-box;
+  border: 4px solid lightgrey;
+  border-radius: 50%;
+  max-width: 13rem;
+  max-height: 13rem;
+  width: 80vw;
+  height: 80vw;
+}
+
+.mobile-image-section img {
+  border-radius: 50%;
+  max-width: 13rem;
+  max-height: 13rem;
+  width: 80vw;
+  height: 80vw;
+}
+
 .profile {
-  min-width: 300px;
+  min-width: 250px;
+  margin: 0.5rem;
+}
+
+.contact-card {
+  border: 1px solid lightgrey;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.details-card {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.social-button-grp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0.7rem;
+}
+
+.social-button {
+  padding: 0.2rem 0.5rem;
+  border: 0.1rem solid lightgrey;
+  border-radius: 0.25rem;
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+
+  background-color: transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.075),
+    0 1px 1px rgba(0, 0, 0, 0.075);
+
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: black;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.social-button:hover,
+.social-button:active {
+  background-color: #f5f5f5;
+  border-color: lightgrey;
+  box-shadow: inset 0 1px 1.5px rgba(0, 0, 0, 0.075);
+}
+
+.social-button > svg {
+  vertical-align: text-bottom;
+}
+
+.hobbies-list {
+  margin: 0;
+  margin-top: 0.1rem;
+}
+
+.hobbies-list > li {
+  margin-bottom: 0.5rem;
+}
+.c26 {
+  padding-top: 0pt;
+  padding-bottom: 3pt;
+  line-height: 1;
+  text-align: left;
+  margin-right: 15pt;
+}
+
+.c28 {
+  font-size: 29pt;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.c1 {
+  font-size: 13pt;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+.c15 {
+  color: #000000;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-style: normal;
+}
+.c20 {
+  font-weight: 400;
+  font-size: 29pt;
+  font-family: "Montserrat";
+}
+.c22 {
+  padding-top: 0pt;
+  padding-bottom: 0pt;
+  line-height: 1.15;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+}
+.c13 {
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none;
+  vertical-align: baseline;
+  font-size: 10pt;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+.c14 {
+  padding-bottom: 10pt;
+  line-height: 1;
+  text-align: left;
+}
+.c10 {
+  background-color: #ffffff;
+  font-size: 10pt;
+  font-family: "Montserrat";
+  color: #3d85c6;
+  font-weight: 700;
+}
+.c9 {
+  font-size: 10pt;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (min-width: 30rem) {
+  .main {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .full-image-section {
+    display: block;
+  }
+
+  .mobile-image-section {
+    display: none;
+  }
+
+  .contact-card,
+  .details-card {
+    padding: 0.5rem;
+    border-width: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .c26 {
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+  }
 }
